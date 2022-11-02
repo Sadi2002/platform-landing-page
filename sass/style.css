@@ -20,21 +20,175 @@ body {
   height: 80vh;
   background-image: -webkit-gradient(linear, left top, right bottom, color-stop(10%, #ff8f70), color-stop(130%, #ff3d54));
   background-image: linear-gradient(to right bottom, #ff8f70 10%, #ff3d54 130%);
-  border-bottom-left-radius: 10rem;
   position: relative;
   overflow: hidden;
   padding: 3rem 3rem;
   z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container__header__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Overpass", sans-serif;
+}
+
+.container__header__text-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.container__header__title {
+  font-size: 2.5rem;
+  width: 100%;
+  color: white;
+  font-weight: 300;
+  line-height: 5rem;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.container__header__text {
+  font-size: 1.8rem;
+  text-align: center;
+  color: whitesmoke;
+  line-height: 2.7rem;
+}
+
+.container__header__btn-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+  height: 50px;
+}
+
+.container__header__btn {
+  width: 45%;
+  border-radius: 10rem;
+  background: none;
+  border: 1.5px solid white;
+  font-family: "Ubuntu", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.container__header__btn:nth-child(1) {
+  background-color: white;
+  color: #ff3d54;
 }
 
 .container__header__circles {
   position: absolute;
   top: 70%;
-  left: 70%;
+  left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 1100px;
   z-index: -1;
+}
+
+@media screen and (min-width: 360px) {
+  .container__header__title {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .container__header {
+    border-bottom-left-radius: 10rem;
+  }
+  .container__header__title {
+    font-size: 3.3rem;
+    width: 95%;
+  }
+  .container__header__text {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .container__header__title {
+    font-size: 3.5rem;
+  }
+  .container__header__btn {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 535px) {
+  .container__header__text {
+    width: 60%;
+  }
+  .container__header__btn {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 535px) {
+  .container__header__title {
+    font-size: 4rem;
+  }
+  .container__header__btn {
+    width: 30%;
+  }
+}
+
+@media screen and (min-height: 1080px) {
+  .container__header__title {
+    font-size: 5rem;
+    line-height: 8rem;
+  }
+  .container__header__text {
+    font-size: 2.5rem;
+    width: 90%;
+    line-height: 4rem;
+  }
 }
 
 .container__nav__mobile {
@@ -49,7 +203,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 10rem;
 }
 
 .container__nav__logo {
@@ -73,8 +227,6 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -193,9 +345,45 @@ body {
   color: whitesmoke;
 }
 
+@media screen and (min-width: 375px) {
+  .container__nav__mobile {
+    margin-bottom: 10rem;
+  }
+  .container__nav__box {
+    top: 55%;
+  }
+}
+
+@media screen and (min-width: 390px) {
+  .container__nav__box {
+    top: 50%;
+  }
+}
+
+@media screen and (min-width: 412px) and (min-height: 896px) {
+  .container__nav__mobile {
+    margin-bottom: 15rem;
+  }
+  .container__nav__box {
+    top: 45%;
+  }
+}
+
 @media screen and (min-width: 450px) {
   .container__nav__box {
     width: 400px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container__nav__box {
+    display: none;
+  }
+}
+
+@media screen and (min-height: 1080px) {
+  .container__nav__mobile {
+    margin-bottom: 20rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
