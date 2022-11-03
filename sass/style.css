@@ -123,6 +123,17 @@ body {
   color: #ff3d54;
 }
 
+.container__header__circles-desktop {
+  display: none;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 1100px;
+  z-index: -1;
+}
+
 .container__header__circles {
   position: absolute;
   top: 70%;
@@ -179,15 +190,45 @@ body {
   }
 }
 
-@media screen and (min-height: 1080px) {
+@media screen and (min-width: 768px) {
+  .container__header__circles {
+    display: none;
+  }
+  .container__header__circles-desktop {
+    display: block;
+    width: 1500px;
+  }
   .container__header__title {
-    font-size: 5rem;
+    font-size: 6rem;
     line-height: 8rem;
   }
   .container__header__text {
-    font-size: 2.5rem;
-    width: 90%;
+    width: 70%;
+    font-size: 3rem;
     line-height: 4rem;
+  }
+  .container__header__btn {
+    width: 35%;
+    height: 70px;
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .container__header__title {
+    font-size: 6.5rem;
+    line-height: 8.5rem;
+    margin-bottom: 2rem;
+  }
+  .container__header__text {
+    width: 75%;
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+  }
+  .container__header__btn {
+    width: 35%;
+    height: 70px;
+    font-size: 2.2rem;
   }
 }
 
@@ -268,6 +309,14 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
+.close-btn {
+  -webkit-filter: brightness(0);
+          filter: brightness(0);
+  right: 20px;
+  top: 20px;
+  position: absolute;
+}
+
 .container__nav__list-contact {
   background-color: #dedede;
   padding: 3rem 0;
@@ -345,9 +394,93 @@ body {
   color: whitesmoke;
 }
 
+.container__nav__desktop {
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+  margin-bottom: 15rem;
+}
+
+.container__nav__desktop__left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.container__nav__desktop__logo {
+  font-size: 3.5rem;
+  font-family: "Overpass", sans-serif;
+  color: white;
+}
+
+.container__nav__desktop__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.container__nav__desktop__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container__nav__desktop__link {
+  font-size: 1.8rem;
+  color: white;
+  text-decoration: none;
+  font-family: "Overpass", sans-serif;
+}
+
+.container__nav__desktop .arrow__desktop {
+  width: 1rem;
+  -webkit-filter: brightness(10);
+          filter: brightness(10);
+}
+
+.container__nav__desktop__right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.container__nav__desktop__login {
+  font-family: "Overpass", sans-serif;
+  font-size: 1.8rem;
+  color: white;
+  background: none;
+  border: none;
+  font-weight: bold;
+}
+
+.container__nav__desktop__sign-up {
+  font-family: "Overpass", sans-serif;
+  font-size: 1.8rem;
+  color: #ff3d54;
+  background-color: white;
+  width: 100px;
+  border: none;
+  font-weight: bold;
+  height: 40px;
+  border-radius: 2rem;
+}
+
 @media screen and (min-width: 375px) {
   .container__nav__mobile {
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
   }
   .container__nav__box {
     top: 55%;
@@ -357,6 +490,15 @@ body {
 @media screen and (min-width: 390px) {
   .container__nav__box {
     top: 50%;
+  }
+  .container__nav__mobile {
+    margin-bottom: 10rem;
+  }
+}
+
+@media screen and (min-width: 393px) {
+  .container__nav__mobile {
+    margin-bottom: 12rem;
   }
 }
 
@@ -378,6 +520,20 @@ body {
 @media screen and (min-width: 768px) {
   .container__nav__box {
     display: none;
+  }
+  .container__nav__mobile {
+    display: none;
+  }
+  .container__nav__desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .container__nav__desktop {
+    margin-bottom: 20rem;
   }
 }
 
