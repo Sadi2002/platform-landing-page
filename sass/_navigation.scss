@@ -173,6 +173,7 @@
     background: none;
     border: none;
     font-weight: bold;
+    cursor: pointer;
   }
   &__sign-up {
     font-family: $overpass;
@@ -184,6 +185,10 @@
     font-weight: bold;
     height: 40px;
     border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
   }
 }
 
@@ -242,5 +247,17 @@
 @media screen and (min-height: 1080px) {
   .container__nav__mobile {
     margin-bottom: 20rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container__nav__desktop {
+    width: 1000px;
+    margin-bottom: 20rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container__nav__desktop {
+    width: 1000px;
+    margin-bottom: 15rem;
   }
 }

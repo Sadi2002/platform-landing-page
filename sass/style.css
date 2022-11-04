@@ -51,6 +51,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   font-family: "Overpass", sans-serif;
+  position: absolute;
+  top: 40%;
 }
 
 .container__header__text-box {
@@ -116,11 +118,20 @@ body {
   font-size: 1.2rem;
   font-weight: bold;
   color: white;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .container__header__btn:nth-child(1) {
   background-color: white;
   color: #ff3d54;
+}
+
+.container__header__btn:nth-child(1):hover {
+  background: none;
+  border: 1.5px solid white;
+  color: white;
 }
 
 .container__header__circles-desktop {
@@ -229,6 +240,41 @@ body {
     width: 35%;
     height: 70px;
     font-size: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container__header__title {
+    font-size: 6rem;
+    width: 100%;
+    font-weight: bold;
+    font-family: "Overpass", sans-serif;
+    margin-bottom: 0;
+  }
+  .container__header__text {
+    width: 75%;
+    font-size: 2.5rem;
+    line-height: 4.5rem;
+  }
+  .container__header__text-box {
+    margin-bottom: 7rem;
+  }
+  .container__header__btn {
+    width: 30%;
+    height: 70px;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-height: 1080px) {
+  .container__header__title {
+    font-size: 5rem;
+    line-height: 8rem;
+  }
+  .container__header__text {
+    font-size: 2.5rem;
+    width: 90%;
+    line-height: 4rem;
   }
 }
 
@@ -464,6 +510,7 @@ body {
   background: none;
   border: none;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .container__nav__desktop__sign-up {
@@ -476,6 +523,16 @@ body {
   font-weight: bold;
   height: 40px;
   border-radius: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 375px) {
@@ -540,6 +597,20 @@ body {
 @media screen and (min-height: 1080px) {
   .container__nav__mobile {
     margin-bottom: 20rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container__nav__desktop {
+    width: 1000px;
+    margin-bottom: 20rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container__nav__desktop {
+    width: 1000px;
+    margin-bottom: 15rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

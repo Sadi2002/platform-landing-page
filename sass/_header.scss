@@ -3,7 +3,7 @@
   height: 80vh;
   background-image: linear-gradient(
     to right bottom,
-    $very-light-red 10%,
+    $very-light-red 11%,
     $light-red 130%
   );
 
@@ -21,6 +21,8 @@
     align-items: center;
     flex-direction: column;
     font-family: $overpass;
+    position: absolute;
+    top: 40%;
   }
 
   &__text-box {
@@ -69,10 +71,18 @@
     font-size: 1.2rem;
     font-weight: bold;
     color: $white;
+    cursor: pointer;
+    transition: all 0.3s;
 
     &:nth-child(1) {
       background-color: $white;
       color: $light-red;
+
+      &:hover {
+        background: none;
+        border: 1.5px solid $white;
+        color: $white;
+      }
     }
   }
 
@@ -182,15 +192,38 @@
     font-size: 2.2rem;
   }
 }
+@media screen and (min-width: 1200px) {
+  .container__header__title {
+    font-size: 6rem;
+    width: 100%;
+    font-weight: bold;
+    font-family: $overpass;
+    margin-bottom: 0;
+  }
+  .container__header__text {
+    width: 75%;
+    font-size: 2.5rem;
+    line-height: 4.5rem;
+  }
 
-// @media screen and (min-height: 1080px) {
-//   .container__header__title {
-//     font-size: 5rem;
-//     line-height: 8rem;
-//   }
-//   .container__header__text {
-//     font-size: 2.5rem;
-//     width: 90%;
-//     line-height: 4rem;
-//   }
-// }
+  .container__header__text-box {
+    margin-bottom: 7rem;
+  }
+  .container__header__btn {
+    width: 30%;
+    height: 70px;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-height: 1080px) {
+  .container__header__title {
+    font-size: 5rem;
+    line-height: 8rem;
+  }
+  .container__header__text {
+    font-size: 2.5rem;
+    width: 90%;
+    line-height: 4rem;
+  }
+}
