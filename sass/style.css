@@ -1235,7 +1235,7 @@ body {
 
 .container__tooling__details__text {
   text-align: center;
-  width: 75%;
+  width: 65%;
   font-size: 1.5rem;
   color: #5b6771;
   line-height: 2.6rem;
@@ -1386,6 +1386,108 @@ body {
 }
 
 .container__footer {
-  background-color: #2c2d3f;
+  background-color: #1e252f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px 0 50px;
+  border-top-right-radius: 10rem;
+  margin-top: -100px;
+}
+
+.container__footer__title {
+  font-family: "Overpass", sans-serif;
+  font-size: 4rem;
+  color: whitesmoke;
+  margin-bottom: 70px;
+}
+
+.container__footer__product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Overpass", sans-serif;
+  margin-bottom: 50px;
+}
+
+.container__footer__product__title {
+  font-size: 2rem;
+  color: whitesmoke;
+  margin-bottom: 30px;
+}
+
+.container__footer__product__list {
+  list-style: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.container__footer__product__link {
+  text-decoration: none;
+  color: #dedede;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container__footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: -300px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container__footer {
+    margin-top: -150px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .container__footer {
+    margin-top: -150px;
+  }
+  .container__footer__title {
+    font-size: 5rem;
+  }
+  .container__footer__product__title {
+    font-size: 3rem;
+  }
+  .container__footer__product__link {
+    font-size: 2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
