@@ -42,6 +42,20 @@
     line-height: 5rem;
     text-align: center;
     font-family: $ubuntu;
+    transform: translateX(100px);
+    opacity: 0;
+    animation: headerTitle 2s 1s forwards;
+  }
+
+  @keyframes headerTitle {
+    from {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
 
   &__text {
@@ -49,6 +63,20 @@
     text-align: center;
     color: $light-gray;
     line-height: 2.7rem;
+    transform: translateX(-100px);
+    opacity: 0;
+    animation: headerText 2s 1.5s forwards;
+  }
+
+  @keyframes headerText {
+    from {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
 
   &__btn-box {
@@ -77,15 +105,43 @@
     &:nth-child(1) {
       background-color: $white;
       color: $light-red;
+      transform: translateY(100px);
+      opacity: 0;
+      animation: headerLeftBtn 2s 2s forwards;
+    }
 
-      &:hover {
-        background: none;
-        border: 1.5px solid $white;
-        color: $white;
+    @keyframes headerLeftBtn {
+      from {
+        transform: translateY(100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
       }
     }
-  }
+    &:nth-child(2) {
+      transform: translateY(100px);
+      opacity: 0;
+      animation: headerRightBtn 2s 2.4s forwards;
+    }
 
+    @keyframes headerRightBtn {
+      from {
+        transform: translateY(100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    &:hover {
+      background: none;
+      border: 1.5px solid $white;
+      color: $white;
+    }
+  }
   &__circles-desktop {
     display: none;
     position: absolute;

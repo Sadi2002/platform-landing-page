@@ -84,6 +84,37 @@ body {
   line-height: 5rem;
   text-align: center;
   font-family: "Ubuntu", sans-serif;
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+  opacity: 0;
+  -webkit-animation: headerTitle 2s 1s forwards;
+          animation: headerTitle 2s 1s forwards;
+}
+
+@-webkit-keyframes headerTitle {
+  from {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes headerTitle {
+  from {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .container__header__text {
@@ -91,6 +122,37 @@ body {
   text-align: center;
   color: whitesmoke;
   line-height: 2.7rem;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+  opacity: 0;
+  -webkit-animation: headerText 2s 1.5s forwards;
+          animation: headerText 2s 1.5s forwards;
+}
+
+@-webkit-keyframes headerText {
+  from {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes headerText {
+  from {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .container__header__btn-box {
@@ -131,9 +193,74 @@ body {
 .container__header__btn:nth-child(1) {
   background-color: white;
   color: #ff3d54;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  opacity: 0;
+  -webkit-animation: headerLeftBtn 2s 2s forwards;
+          animation: headerLeftBtn 2s 2s forwards;
 }
 
-.container__header__btn:nth-child(1):hover {
+@-webkit-keyframes headerLeftBtn {
+  from {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes headerLeftBtn {
+  from {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.container__header__btn:nth-child(2) {
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  opacity: 0;
+  -webkit-animation: headerRightBtn 2s 2.4s forwards;
+          animation: headerRightBtn 2s 2.4s forwards;
+}
+
+@-webkit-keyframes headerRightBtn {
+  from {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes headerRightBtn {
+  from {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.container__header__btn:hover {
   background: none;
   border: 1.5px solid white;
   color: white;
@@ -328,10 +455,72 @@ body {
   font-family: "Overpass", sans-serif;
   font-weight: bold;
   color: white;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+  opacity: 0;
+  -webkit-animation: logo 1.5s 0.1s forwards;
+          animation: logo 1.5s 0.1s forwards;
+}
+
+@-webkit-keyframes logo {
+  from {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes logo {
+  from {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .container__nav__burger-menu {
   height: 20px;
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+  opacity: 0;
+  -webkit-animation: burger 1.5s 0.1s forwards;
+          animation: burger 1.5s 0.1s forwards;
+}
+
+@-webkit-keyframes burger {
+  from {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes burger {
+  from {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .container__nav__box {
@@ -615,6 +804,68 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .container__nav__desktop__left-side {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    opacity: 0;
+    -webkit-animation: desktopLogo 1.5s 0.1s forwards;
+            animation: desktopLogo 1.5s 0.1s forwards;
+  }
+  @-webkit-keyframes desktopLogo {
+    from {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes desktopLogo {
+    from {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .container__nav__desktop__right-side {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    opacity: 0;
+    -webkit-animation: desktopUser 1.5s 0.5s forwards;
+            animation: desktopUser 1.5s 0.5s forwards;
+  }
+  @-webkit-keyframes desktopUser {
+    from {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes desktopUser {
+    from {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
   }
 }
 
