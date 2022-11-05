@@ -1,0 +1,256 @@
+.container__art {
+  width: 100%;
+  background-color: $very-dark-desaturated-blue;
+  border-radius: 0 10rem 0 10rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  height: 600px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    top: -100px;
+    background-color: $very-dark-black-blue;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 370px;
+    height: 370px;
+    border-radius: 50%;
+    top: -130px;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    z-index: -1;
+  }
+
+  &__img {
+    position: relative;
+    top: -250px;
+    width: 350px;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: $overpass;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: $light-gray;
+  }
+
+  &__text {
+    width: 90%;
+    text-align: center;
+    color: $grayish;
+    font-size: 1.6rem;
+    line-height: 2.7rem;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  .container__art {
+    &::before {
+      width: 300px;
+      height: 300px;
+    }
+  }
+}
+@media screen and (min-width: 375px) {
+  .container__art {
+    height: 580px;
+  }
+}
+
+@media screen and (min-width: 540px) and (min-height: 720px) {
+  .container__art__title {
+    width: 100%;
+    font-size: 3rem;
+  }
+  .container__art__text {
+    font-size: 1.5rem;
+  }
+  .container__art__text-box {
+    top: 70%;
+  }
+}
+@media screen and (min-width: 650px) {
+  .container__art__img {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container__art {
+    height: 800px;
+    border-radius: 0 15rem 0 15rem;
+
+    &::before {
+      width: 550px;
+      height: 550px;
+      top: -200px;
+    }
+
+    &::after {
+      width: 700px;
+      height: 700px;
+      top: -270px;
+    }
+
+    &__img {
+      position: relative;
+      top: -350px;
+      width: 650px;
+    }
+
+    &__text-box {
+      top: 70%;
+    }
+    &__title {
+      font-size: 4.5rem;
+    }
+    &__text {
+      width: 90%;
+      text-align: center;
+      color: $grayish;
+      font-size: 2.2rem;
+      line-height: 3.7rem;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container__art {
+    height: 400px;
+    flex-direction: row;
+
+    &::before {
+      width: 450px;
+      height: 450px;
+      top: -100px;
+      left: 100px;
+    }
+
+    &::after {
+      width: 700px;
+      height: 700px;
+      top: -270px;
+    }
+
+    &__img {
+      position: relative;
+      top: -80px;
+      left: -250px;
+      width: 650px;
+    }
+
+    &__text-box {
+      position: absolute;
+      top: 50%;
+      left: 950px;
+      width: 40%;
+      align-items: flex-start;
+    }
+    &__title {
+      font-size: 4.5rem;
+      text-align: left;
+    }
+    &__text {
+      width: 90%;
+      color: $grayish;
+      font-size: 2.2rem;
+      line-height: 3.7rem;
+      text-align: left;
+    }
+  }
+}
+
+@media screen and (min-width: 1270px) {
+  .container__art__text-box {
+    left: 980px;
+  }
+  .container__art__img {
+    left: -300px;
+  }
+
+  .container__art {
+    &::after {
+      width: 700px;
+      height: 700px;
+      top: -270px;
+      left: 0;
+    }
+  }
+}
+@media screen and (min-width: 1330px) {
+  .container__art__text-box {
+    left: 1050px;
+  }
+  .container__art__img {
+    left: -300px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container__art__text-box {
+    left: 1100px;
+  }
+  .container__art__img {
+    left: -300px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container__art__img {
+    left: -350px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .container__art__text-box {
+    left: 1200px;
+    width: 50%;
+  }
+  .container__art__img {
+    left: -400px;
+  }
+}
+@media screen and (min-width: 1630px) {
+  .container__art__text-box {
+    left: 1300px;
+  }
+  .container__art__img {
+    left: -530px;
+  }
+}
+@media screen and (min-width: 1780px) {
+  .container__art__text-box {
+    left: 1400px;
+  }
+  .container__art__img {
+    left: -600px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .container__art__text-box {
+    left: 1400px;
+    width: 40%;
+  }
+  .container__art__img {
+    left: -30%;
+  }
+}

@@ -1,6 +1,6 @@
 .container__header {
   width: 100%;
-  height: 80vh;
+  height: 600px;
   background-image: linear-gradient(
     to right bottom,
     $very-light-red 11%,
@@ -180,6 +180,7 @@
     font-size: 2.2rem;
   }
   .container__header {
+    height: 850px;
     margin-bottom: 200px;
   }
 }
@@ -199,57 +200,60 @@
     height: 70px;
     font-size: 2.2rem;
   }
-}
-@media screen and (min-width: 1200px) {
-  .container__header__title {
-    font-size: 7rem;
-    width: 90%;
-    line-height: 10rem;
-    font-weight: bold;
-    font-family: $overpass;
-    margin-bottom: 0;
-  }
-  .container__header__text {
-    width: 70%;
-    font-size: 3.7rem;
-    line-height: 6rem;
-  }
-
-  .container__header__text-box {
-    margin-bottom: 7rem;
-  }
-  .container__header__btn {
-    width: 35%;
-    height: 80px;
-    font-size: 2.5rem;
-  }
-
   .container__header {
-    margin-bottom: 150px;
+    height: 890px;
   }
 }
-@media screen and (min-width: 1200px) and (min-height: 800px) {
+// @media screen and (min-width: 1200px) {
+//   .container__header__title {
+//     font-size: 7rem;
+//     width: 90%;
+//     line-height: 10rem;
+//     font-weight: bold;
+//     font-family: $overpass;
+//     margin-bottom: 0;
+//   }
+//   .container__header__text {
+//     width: 70%;
+//     font-size: 3.7rem;
+//     line-height: 6rem;
+//   }
+
+//   .container__header__text-box {
+//     margin-bottom: 7rem;
+//   }
+//   .container__header__btn {
+//     width: 35%;
+//     height: 80px;
+//     font-size: 2.5rem;
+//   }
+
+//   .container__header {
+//     margin-bottom: 150px;
+//     height: 700px;
+//   }
+// }
+@media screen and (min-width: 1200px) {
   .container__header__title {
     font-size: 5.5rem;
     width: 90%;
     line-height: 8rem;
-    font-weight: bold;
-    font-family: $overpass;
-    margin-bottom: 0;
   }
   .container__header__text {
     width: 100%;
     font-size: 3rem;
-    line-height: 6rem;
   }
 
   .container__header__text-box {
     margin-bottom: 7rem;
   }
   .container__header__btn {
-    width: 35%;
     height: 70px;
     font-size: 2.2rem;
+  }
+  .container__header {
+    margin-bottom: 150px;
+    height: 700px;
   }
 }
 @media screen and (min-width: 1920px) and (min-height: 1080px) {

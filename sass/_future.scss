@@ -3,12 +3,13 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin-bottom: 170px;
 
   &__title {
     font-family: $overpass;
     font-size: 2.7rem;
     color: $very-dark-blue;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-align: center;
   }
 
@@ -19,7 +20,7 @@
   }
 
   &__img {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     width: 100%;
   }
 
@@ -36,7 +37,7 @@
     flex-direction: column;
     align-items: center;
     font-family: $overpass;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 
     &__title {
       font-size: 3rem;
@@ -61,20 +62,37 @@
     font-size: 3rem;
   }
 }
-@media screen and (min-width: 768px) {
-  .container__future__title {
-    font-size: 5rem;
-    margin-bottom: 60px;
-  }
 
-  .container__future__details {
-    margin-bottom: 80px;
+@media screen and (min-width: 540px) and (min-height: 720px) {
+  .container__future {
+    margin-bottom: 200px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .container__future {
+    margin-bottom: 250px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container__future {
+    margin-bottom: 400px;
+
     &__title {
       font-size: 5rem;
+      margin-bottom: 60px;
     }
-    &__text {
-      font-size: 3rem;
-      line-height: 5rem;
+
+    &__details {
+      margin-bottom: 80px;
+      &__title {
+        font-size: 5rem;
+      }
+      &__text {
+        font-size: 3rem;
+        line-height: 5rem;
+      }
     }
   }
 }
@@ -99,7 +117,15 @@
     }
   }
 }
+@media screen and (min-width: 912px) and (min-height: 1368px) {
+  .container__future {
+    margin-bottom: 400px;
+  }
+}
 @media screen and (min-width: 1200px) {
+  .container__future {
+    margin-bottom: 250px;
+  }
   .container__future__title {
     margin-bottom: 100px;
   }
@@ -138,6 +164,11 @@
   }
 }
 
+@media screen and (min-width: 1500px) {
+  .container__future {
+    margin-bottom: 200px;
+  }
+}
 @media screen and (min-width: 1920px) {
   .container__future__box {
     overflow: hidden;

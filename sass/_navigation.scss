@@ -261,3 +261,8 @@
     margin-bottom: 15rem;
   }
 }
+@media screen and (min-width: 1920px) {
+  .container__nav__desktop {
+    width: 1400px;
+  }
+}
